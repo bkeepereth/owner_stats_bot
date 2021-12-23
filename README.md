@@ -20,6 +20,18 @@ DS_TOKEN refers to the Discord Bot Token used for auth.<br>
 
 ## EX
 <p align="center" width="50%">
-  <img src="">
+  <img src="work/owner_stats_usage.png">
+</p>
+
+<p align="center" width="50%">
+  <img src="work/owner_stats_test.png">
+</p>
+
+<p align="center" width="50%">
+  <img src="work/owner_stats_dist_p.png">
+</p>
+
+<p align="center" width="50%">
+  <img src="work/owner_stats_dist_h.png">
 </p>
 
