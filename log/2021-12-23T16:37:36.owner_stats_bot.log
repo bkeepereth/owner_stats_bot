@@ -1,0 +1,112 @@
+INFO:root:2021-12-23 16:37:36.752341|main|starting
+INFO:root:2021-12-23 16:37:36.752473|get_config|starting
+INFO:root:2021-12-23 16:37:36.752699|get_config|completed
+INFO:root:Logged in as:OwnerStats
+INFO:root:2021-12-23 16:37:42.479494|get_erc721_transfers|starting
+INFO:root:2021-12-23 16:37:43.379397|get_erc721_transfers|parsing response...
+INFO:root:2021-12-23 16:38:18.923633|get_erc721_transfers|completed
+INFO:root:2021-12-23 16:38:18.926813|owner_stats|starting
+INFO:root:2021-12-23 16:38:18.950693|parse_owners|starting
+INFO:root:2021-12-23 16:38:18.973315|parse_owners|completed
+INFO:root:2021-12-23 16:38:18.975845|owner_stats|completed
+INFO:root:2021-12-23 16:38:32.612190|get_erc721_transfers|starting
+INFO:root:2021-12-23 16:38:33.379732|get_erc721_transfers|parsing response...
+INFO:root:2021-12-23 16:39:08.500813|get_erc721_transfers|completed
+INFO:root:2021-12-23 16:39:08.504418|owner_dist_h|starting
+INFO:root:2021-12-23 16:39:08.504500|parse_owners|starting
+INFO:root:2021-12-23 16:39:08.533929|parse_owners|completed
+INFO:root:2021-12-23 16:39:09.507534|owner_dist_h|completed
+INFO:root:2021-12-23 16:39:24.054864|get_erc721_transfers|starting
+INFO:root:2021-12-23 16:39:24.956646|get_erc721_transfers|parsing response...
+WARNING:discord.gateway:Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "/Users/daemon1/Dev/dev12/owner_stats/bin/./owner_stats_bot.py", line 120, in <module>
+    main(sys.argv[1:])
+  File "/Users/daemon1/Dev/dev12/owner_stats/bin/./owner_stats_bot.py", line 113, in main
+    client.run(config.get("DS_TOKEN"))
+  File "/opt/anaconda3/lib/python3.9/site-packages/discord/client.py", line 713, in run
+    loop.run_forever()
+  File "/opt/anaconda3/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
+    self._run_once()
+  File "/opt/anaconda3/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
+    handle._run()
+  File "/opt/anaconda3/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/opt/anaconda3/lib/python3.9/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/Users/daemon1/Dev/dev12/owner_stats/bin/./owner_stats_bot.py", line 56, in on_message
+    owner_df=owner_lib.get_erc721_transfers(log,es_key,addr)
+  File "/Users/daemon1/Dev/dev12/owner_stats/bin/../lib/owner_lib.py", line 204, in get_erc721_transfers
+    df=df.append(new_row,ignore_index=True)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 8965, in append
+    concat(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/reshape/concat.py", line 307, in concat
+    return op.get_result()
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/reshape/concat.py", line 532, in get_result
+    new_data = concatenate_managers(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/internals/concat.py", line 226, in concatenate_managers
+    values = _concatenate_join_units(join_units, concat_axis, copy=copy)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/internals/concat.py", line 523, in _concatenate_join_units
+    concat_values = concat_compat(to_concat, axis=concat_axis)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/dtypes/concat.py", line 151, in concat_compat
+    return np.concatenate(to_concat, axis=axis)
+  File "<__array_function__ internals>", line 5, in concatenate
+
+INFO:root:2021-12-23 16:40:01.966050|get_erc721_transfers|completed
+INFO:root:2021-12-23 16:40:01.966196|owner_dist_p|starting
+INFO:root:2021-12-23 16:40:01.966254|parse_owners|starting
+INFO:root:2021-12-23 16:40:01.999778|parse_owners|completed
+INFO:root:2021-12-23 16:40:02.134088|owner_dist_p|completed
+INFO:root:2021-12-23 16:40:25.474493|get_erc721_transfers|starting
+INFO:root:2021-12-23 16:40:26.363490|get_erc721_transfers|parsing response...
+WARNING:discord.gateway:Shard ID None heartbeat blocked for more than 10 seconds.
+Loop thread traceback (most recent call last):
+  File "/Users/daemon1/Dev/dev12/owner_stats/bin/./owner_stats_bot.py", line 120, in <module>
+    main(sys.argv[1:])
+  File "/Users/daemon1/Dev/dev12/owner_stats/bin/./owner_stats_bot.py", line 113, in main
+    client.run(config.get("DS_TOKEN"))
+  File "/opt/anaconda3/lib/python3.9/site-packages/discord/client.py", line 713, in run
+    loop.run_forever()
+  File "/opt/anaconda3/lib/python3.9/asyncio/base_events.py", line 596, in run_forever
+    self._run_once()
+  File "/opt/anaconda3/lib/python3.9/asyncio/base_events.py", line 1890, in _run_once
+    handle._run()
+  File "/opt/anaconda3/lib/python3.9/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/opt/anaconda3/lib/python3.9/site-packages/discord/client.py", line 343, in _run_event
+    await coro(*args, **kwargs)
+  File "/Users/daemon1/Dev/dev12/owner_stats/bin/./owner_stats_bot.py", line 73, in on_message
+    owner_df=owner_lib.get_erc721_transfers(log,es_key,addr)
+  File "/Users/daemon1/Dev/dev12/owner_stats/bin/../lib/owner_lib.py", line 204, in get_erc721_transfers
+    df=df.append(new_row,ignore_index=True)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 8964, in append
+    return (
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/reshape/concat.py", line 307, in concat
+    return op.get_result()
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/reshape/concat.py", line 539, in get_result
+    return cons(new_data).__finalize__(self, method="concat")
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/internals/concat.py", line 236, in concatenate_managers
+    return BlockManager(tuple(blocks), axes)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/internals/concat.py", line 525, in _concatenate_join_units
+    return concat_values
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/dtypes/concat.py", line 151, in concat_compat
+    return np.concatenate(to_concat, axis=axis)
+  File "<__array_function__ internals>", line 5, in concatenate
+
+INFO:root:2021-12-23 16:41:01.514300|get_erc721_transfers|completed
+INFO:root:2021-12-23 16:41:01.514442|owner_dist_p|starting
+INFO:root:2021-12-23 16:41:01.514497|parse_owners|starting
+INFO:root:2021-12-23 16:41:01.547413|parse_owners|completed
+INFO:root:2021-12-23 16:41:01.670340|owner_dist_p|completed
+ERROR:discord.client:Attempting a reconnect in 1.39s
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/discord/client.py", line 566, in connect
+    await self.ws.poll_event()
+  File "/opt/anaconda3/lib/python3.9/site-packages/discord/gateway.py", line 582, in poll_event
+    raise ConnectionClosed(self.socket, shard_id=self.shard_id, code=code) from None
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1000
+INFO:root:2021-12-23 16:42:02.883409|main|completed

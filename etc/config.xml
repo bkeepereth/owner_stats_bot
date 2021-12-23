@@ -1,0 +1,4 @@
+<configuration>
+  <property><name>DS_TOKEN</name><value></value></property>
+  <property><name>ES_KEY</name><value></value></property>
+</configuration>
