@@ -5,8 +5,7 @@ Inspired by @jumpanft's and @NFTzyBoi's works.
 
 ## Notes
 
-The bot will output various metrics, charts, and graphs based on user-command.<br>
-CLI-style tools are convenient...<br>
+CLI-style tool will output various metrics, charts, and graphs based on user-command.<br>
 
 
 ## Configuration
