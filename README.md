@@ -1,6 +1,6 @@
 # owner_stats_bot
 
-Sample from bkeeper's purple scouter, a DIY NFT tool-suite made for discord.<br>
+Prototype sample from bkeeper's purple scouter, a DIY NFT tool-suite made for discord.<br>
 Inspired by @jumpanft's and @NFTzyBoi's works.
 
 ## Notes
